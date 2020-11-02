@@ -48,13 +48,11 @@ const questions = [{type: "input",
 
 // function to initialize program
 function init() {
-    for (var i=0; i < questions.length; i++){
         inquirer
-            .prompt(questions[i])
+            .prompt(questions)
             .then(function(response){
                 console.log(response.username);
             })
-    }
 }
 
 // // function call to initialize program
