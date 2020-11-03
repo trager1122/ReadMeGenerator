@@ -27,7 +27,7 @@ function generateMarkdown(data) {
   6. [Repository](#repo)  
   7. [Contact](#contact)          
   
-  <a name='desc'></a>                                               ![${badgeAlt}](${licenseBadge} =50x50)     
+  <a name='desc'></a>                                               ![${badgeAlt}](${licenseBadge})     
   ### Description
   >${data.description}
   
