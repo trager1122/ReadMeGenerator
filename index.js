@@ -22,7 +22,7 @@ const questions = [{type: "input",
                    {type: "list",
                     name: "license",
                     message: "What type of license does your project have?",
-                    choices: ['None','MIT', 'GPL', 'LGPL', 'MPL', 'Apache', 'BSD']
+                    choices: ['None','MIT', 'GPL', 'Apache', 'BSD']
                    },
                    {type: "input",
                     message: "What command should be run to install dependencies?",
@@ -43,15 +43,16 @@ const questions = [{type: "input",
 ];
 
 // // function to write README file
-// function writeToFile(fileName, data) {
+// function writeToFile("README.md", data) {
 // }
 
 // function to initialize program
 function init() {
         inquirer
             .prompt(questions)
-            .then(function(response){
-                console.log(response.username);
+            .then(function(data){
+                var readmeMD = generateMarkdown.generateMarkdown(data);
+                writetoFile(readmeMD);
             })
 }
 
