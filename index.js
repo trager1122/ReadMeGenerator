@@ -1,5 +1,5 @@
-var inquirer = require("inquirer");
-var fs = require("fs");
+var inquirer = require('inquirer');
+var fs = require('fs');
 var generateMarkdown=require('./utils/generateMarkdown.js');
 
 // array of questions for user
@@ -34,7 +34,7 @@ const questions = [{type: "input",
                    },
                    {type: "input",
                     message: "What does the user need to know to use your project?",
-                    name: "uses"
+                    name: "usage"
                    },
                    {type: "input",
                     message: "What does the user need to know to contribute to this project?",
@@ -43,16 +43,20 @@ const questions = [{type: "input",
 ];
 
 // // function to write README file
-// function writeToFile("README.md", data) {
-// }
+function writeToFile(readmeMD) {
+    fs.writeFileSync("generatedREADME.md", readmeMD, function(err){
+        if (err) throw err;
+        console.log ('Saved!');
+    })
+}
 
 // function to initialize program
 function init() {
         inquirer
             .prompt(questions)
             .then(function(data){
-                var readmeMD = generateMarkdown.generateMarkdown(data);
-                writetoFile(readmeMD);
+                var readmeMD = generateMarkdown(data);
+                writeToFile(readmeMD);
             })
 }
 

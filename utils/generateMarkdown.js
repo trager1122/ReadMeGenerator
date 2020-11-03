@@ -21,7 +21,7 @@ function generateMarkdown(data) {
           ##Table of Contents
             1.[Description](#desc)
             2.[Installation](#installation)
-            3.[Usage](#usage)</li>
+            3.[Usage](#usage)
             4.[Contribution](#contribution)
             5.[License](#license)
             6.[Repository](#repo)
@@ -57,4 +57,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown();
+module.exports = generateMarkdown;
