@@ -17,30 +17,30 @@ function generateMarkdown(data) {
   }
 
   return `
-  #${data.title}
-          ##Table of Contents
-            1.[Description](#desc)
-            2.[Installation](#installation)
-            3.[Usage](#usage)
-            4.[Contribution](#contribution)
-            5.[License](#license)
-            6.[Repository](#repo)
-            7.[Contact](#contact)        
+  # ${data.title}  
+          ## Table of Contents  
+            1.[Description](#desc)  
+            2.[Installation](#installation)  
+            3.[Usage](#usage)  
+            4.[Contribution](#contribution)  
+            5.[License](#license)  
+            6.[Repository](#repo)  
+            7.[Contact](#contact)          
   
   <a name='desc'></a>                                               ![${badgeAlt}](${licenseBadge})     
-  ###Description
+  ### Description
   >${data.description}
   
   <a name='installation'></a>
-  ###Installation
+  ### Installation
   >${data.installation}
   
   <a name='usage'></a>
-  ###Usage
+  ### Usage
   >${data.usage}
   
   <a name='contribution'></a>
-  ###Contribution
+  ### Contribution
   >${data.contribution}
   
   <a name='license'></a>
@@ -48,11 +48,11 @@ function generateMarkdown(data) {
   >${data.license}
   
   <a name='repo'></a>
-  ###Repository
+  ### Repository
   >www.github.com/${data.username}/${data.title}
   
   <a name='contact'></a>
-  ###Contact
+  ### Contact
   ><${data.email}>
 `;
 }
