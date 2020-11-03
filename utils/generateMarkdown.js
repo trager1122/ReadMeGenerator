@@ -18,14 +18,14 @@ function generateMarkdown(data) {
 
   return `
   # ${data.title}  
-          ## Table of Contents  
-            1.[Description](#desc)  
-            2.[Installation](#installation)  
-            3.[Usage](#usage)  
-            4.[Contribution](#contribution)  
-            5.[License](#license)  
-            6.[Repository](#repo)  
-            7.[Contact](#contact)          
+  ## Table of Contents  
+  1. [Description](#desc)  
+  2. [Installation](#installation)  
+  3. [Usage](#usage)  
+  4. [Contribution](#contribution)  
+  5. [License](#license)  
+  6. [Repository](#repo)  
+  7. [Contact](#contact)          
   
   <a name='desc'></a>                                               ![${badgeAlt}](${licenseBadge} =50x50)     
   ### Description
