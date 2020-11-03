@@ -44,7 +44,7 @@ function generateMarkdown(data) {
   >${data.contribution}
   
   <a name='license'></a>
-  ###License
+  ### License
   >${data.license}
   
   <a name='repo'></a>
