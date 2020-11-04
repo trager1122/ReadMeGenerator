@@ -60,5 +60,5 @@ function init() {
             })
 }
 
-// // function call to initialize program
+//function call to initialize program
 init();
